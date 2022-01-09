@@ -46,3 +46,34 @@ alter table demo.import_head_hist modify import_quantity decimal(10,3);
 
 # 在xx字段后面添加一个字段
 alter table demo.import_head_hist add supplier_name text after supplier_id;
+
+/*
+常用SQL语句
+CREATE TABLE
+(
+字段名 字段类型 PRIMARY KEY
+);
+CREATE TABLE
+(
+字段名 字段类型 NOT NULL
+);
+CREATE TABLE
+(
+字段名 字段类型 UNIQUE
+);
+CREATE TABLE
+(
+字段名 字段类型 DEFAULT 值
+);
+-- 这里要注意自增类型的条件，字段类型必须是整数类型。
+CREATE TABLE
+(
+字段名 字段类型 AUTO_INCREMENT
+);
+-- 在一个已经存在的表基础上，创建一个新表
+CREATE TABLE demo.import_head_hist LIKE demo.import_head;
+-- 修改表的相关语句
+ALTER TABLE 表名 CHANGE 旧字段名 新字段名 数据类型;
+ALTER TABLE 表名 ADD COLUMN 字段名 字段类型 FIRST|AFTER 字段名;
+ALTER TABLE 表名 MODIFY 字段名 字段类型 FIRST|AFTER 字段名;
+ */
