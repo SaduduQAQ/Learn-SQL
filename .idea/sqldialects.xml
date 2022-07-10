@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/No-SQL/MongoDB" dialect="MongoDB" />
     <file url="file://$PROJECT_DIR$/SQL/MySQL" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/MySQL是如何运行的_Book" dialect="MySQL" />
   </component>
 </project>
